@@ -1,0 +1,49 @@
+/* .fade-left,
+.fade-right {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.fade-left {
+  transform: translateX(-100px);
+}
+
+.fade-right {
+  transform: translateX(100px);
+}
+ */
+/* 筆背景 */
+.imgBk-Section {
+    position: relative;
+}
+.imgBk-inner {
+    position: absolute;
+    top: 20%;
+    right: -20%;
+    z-index: -1;
+}
+
+.imgBk-Section2 {
+    position: relative;
+}
+.imgBk-inner2 {
+    position: absolute;
+    top: 0;
+    left: -30%;
+    z-index: -1;
+}
+
+.imgBk-inner2-1 {
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    z-index: -1;
+}
+
+.imgBk-inner_svg {
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: -18%;
+    z-index: -1;
+}

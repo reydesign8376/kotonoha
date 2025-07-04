@@ -1,0 +1,157 @@
+/* ============== お問い合わせフォーム ============== */
+.cf_section {
+    max-width: 900px;
+    padding: 0 1rem;
+}
+.cf_section .inner {
+    /* display: flex;
+    align-items: center; */
+    margin-bottom: 2rem;
+}
+
+.cf_section .item.detail p {
+    padding-bottom: 4px;
+    padding-left: 8px;
+    /* justify-content: normal; */
+}
+
+.detail_date {
+    padding-bottom: 4px;
+    padding-left: 8px;
+}
+
+.kiboubi_wrap .item.value {
+    margin-bottom: 1rem;
+}
+
+.cf_section .inner.message {
+    align-items: flex-start;
+}
+
+/* .cf_section .item.detail {
+    flex: 1;
+} */
+
+.cf_section .item.value {
+    flex: 1.3;
+}
+
+/* .cf_section .item.detail p {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+} */
+
+.wpcf7-form-control {
+    background: #fff;
+    width: 100%;
+}
+
+.cf_section.confirmation .inner {
+    border-bottom: 0.5px solid;
+    padding: 1rem;
+}
+
+/* 必須 */
+.required_label {
+    background: #fa5549;
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+/* 任意 */
+.any_label {
+    background: #8b8b8b;
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+/* ボタン */
+/* 戻るボタンが消えるのを防ぐ */
+.wpcf7-previous {
+    display: inline-block !important;
+}
+
+.send_btn.return .wpcf7-previous {
+    width: 380px;
+    padding: 8px;
+    color: #fff;
+    background: var(--color_main);
+    border: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.send_btn input[type="submit"] {
+    width: 380px;
+    padding: 8px;
+    color: #fff;
+    background: var(--color_main);
+    border: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.send_btn_block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dateinfo{
+	font-size:.75rem;
+}
+.dateinfo p{
+letter-spacing:1px
+}
+
+.cf_privacy{
+	text-align:center;
+}
+
+.cf_privacy .wpcf7-list-item{
+	margin:0;
+}
+
+@media screen and (max-width: 781px) {
+    /* .cf_section .inner {
+        flex-direction: column;
+        align-items: normal;
+    } */
+
+    .cf_section .item .description {
+        padding-right: 8px;
+    }
+
+    .cf_section .inner.message {
+        align-items: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .send_btn.return .wpcf7-previous,
+    .send_btn input[type="submit"] {
+        width: 60vw !important;
+    }
+}
+
+.kiboubi_wrap .item.value {
+    width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+    .kiboubi_wrap .item.value {
+        width: 100%;
+    }
+}
+/* ============== お問い合わせフォーム ============== */

@@ -1,0 +1,1494 @@
+.p-termContent {
+    margin-top: 0;
+}
+
+/* ヘッダー */
+.l-header .c-gnav > li > a:after {
+    background: var(--color_main);
+}
+
+/* sns */
+.line_parts {
+    max-width: 260px;
+    width: 100%;
+    margin: auto;
+}
+
+.line_parts img {
+    width: 85px;
+    height: auto;
+}
+
+/* 削除 */
+.c-pageTitle,
+.p-postList__meta :before,
+.c-postTimes__posted:before,
+.c-categoryList:before {
+    display: none;
+}
+/* 削除 */
+
+/* FV */
+.fvTitle {
+    line-height: 1;
+    letter-spacing: 12px;
+    margin-left: calc(100% / 15);
+}
+/* .Fv-section{
+	background:aqua;
+} */
+.Fv-inner {
+    height: calc(100vh / 1.3);
+    position: relative;
+}
+
+.Fv-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    border-radius: 0px 50px 50px 0px;
+    padding: 0.5rem 4rem;
+}
+
+.Fv-btn .has-swl-main-color {
+    color: var(--color_main);
+    font-family: "Yu Mincho", "YuMincho", serif;
+    text-align: center;
+}
+
+/* 固定ページh2デザイン */
+.h2Design h2 {
+    letter-spacing: 4px;
+    background: unset;
+    color: unset;
+    font-weight: bold !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.h2Design p {
+    text-align: center !important;
+    color: var(--color_main);
+    font-family: "Yu Mincho", "YuMincho", serif;
+}
+
+/* 固定ページh3デザイン */
+
+/* お知らせ */
+.original_info .p-postList__body {
+    display: flex;
+}
+
+.original_info .p-postList__meta {
+    flex-direction: row-reverse;
+}
+
+.original_info .p-postList__cat {
+    color: #fff;
+    padding: 0.1rem 0.3rem;
+    background-color: #000000;
+}
+.original_info .p-postList__meta :before {
+    display: none;
+}
+
+/* 下層ページカラム */
+.Lowercolumns {
+    /* 	background:#ffeaea; */
+    max-width: 800px;
+    margin: auto;
+    gap: 2rem;
+    align-items: center;
+}
+/* リセットcss */
+h2 {
+    font-weight: normal !important;
+}
+
+p,
+a {
+    letter-spacing: 4px;
+}
+
+.en-US p,
+.en-US a {
+    letter-spacing: 1px !important;
+}
+
+.wp-block-columns {
+    gap: 0 !important;
+}
+
+.swell-block-fullWide {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.snmBlock {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* リセットcss */
+
+/* Viewボタン */
+.OrgMoreBtn {
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid var(--color_main) 1px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.OrgMoreBtn .sme-font-size {
+    font-family: "Yu Mincho", "YuMincho", serif;
+}
+
+/* ViewMoreテキストのみボタン */
+.viewonly_btn {
+    font-family: "Yu Mincho", "YuMincho", serif;
+}
+
+/* 共通線スタイル */
+.OrgMoreBtn::after,
+.OrgMoreBtn::before,
+.OrgMoreBtn span::after,
+.OrgMoreBtn span::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color_main);
+    display: block;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* 上線 */
+.OrgMoreBtn::after {
+    width: 0;
+    height: 2px;
+    top: -1px;
+    right: -1px;
+    transition-delay: 0.2s;
+}
+
+/* 左線 */
+.OrgMoreBtn span::after {
+    width: 2px;
+    height: 0;
+    left: -1px;
+    top: -1px;
+    transition-delay: 0.35s;
+}
+
+/* 右線 */
+.OrgMoreBtn span::before {
+    width: 2px;
+    height: 0;
+    bottom: -1px;
+    right: -1px;
+    transition-delay: 0s;
+}
+
+/* 線の表示順 */
+.OrgMoreBtn:hover::after {
+    width: calc(100% + 2px);
+}
+
+.OrgMoreBtn:hover span::after {
+    height: calc(100% + 2px);
+}
+
+.OrgMoreBtn:hover span::before {
+    height: calc(100% + 2px);
+}
+
+.OrgMoreBtn:hover {
+    opacity: 70%;
+}
+
+/* 背景和紙 */
+.styleBksection {
+    /* background-color: beige; */
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/pepar-op5.png);
+    background-size: 40%;
+    position: relative;
+    mix-blend-mode: multiply;
+}
+.styleBksection::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_bg);
+    top: -50px;
+    left: 0;
+    box-shadow: 0 0 40px 30px var(--color_bg);
+    /* border-radius: 50%; */
+}
+
+.styleBksection::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_bg);
+    bottom: -45px;
+    left: 0;
+    box-shadow: 0 0 40px 30px var(--color_bg);
+    /* border-radius: 50%; */
+}
+
+/* 背景和紙 */
+
+/* Googleカレンダー */
+#kotonoha_calendar-week {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+#kotonoha_calendar-week th,
+#kotonoha_calendar-week td {
+    width: 14.2857%;
+    word-break: break-word;
+}
+/* 日付位置 */
+#kotonoha_calendar-week td {
+    vertical-align: top;
+    /* 	position:relative; */
+}
+#kotonoha_calendar-week td strong {
+    display: block;
+    text-align: left;
+    padding: 4px;
+}
+#kotonoha_calendar-body td {
+    height: 100px;
+}
+@media screen and (max-width: 768px) {
+    #kotonoha_calendar-week td strong,
+    #kotonoha_calendar-week thead th {
+        font-size: 3vw;
+        white-space: nowrap;
+    }
+    #kotonoha_calendar-week td {
+        padding: 0.2rem 0.2rem 2.5rem;
+    }
+}
+#kotonoha_calendar-week .event {
+    background: #d296965e;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    /* 	position:absolute;
+	left:0;
+	top:3px; */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+/* 今日の日付 */
+#kotonoha_calendar-week td strong {
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+    margin-bottom: 3px;
+}
+#kotonoha_calendar-week td.today strong {
+    background-color: var(--color_main);
+    display: inline-block;
+    border-radius: 60px 0;
+    color: #fff;
+}
+.kotonoha_calendar-section h2 {
+    background: unset;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#kotonoha_calendar-title {
+    background: unset;
+    color: black;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+#kotonoha_calendar-week thead th {
+    background-color: #44a69a8c;
+    text-align: center;
+    font-weight: normal !important;
+}
+#kotonoha_calendar-week th {
+    padding: 0.5rem;
+    border: none;
+}
+
+#kotonoha_calendar-body strong {
+    font-weight: normal !important;
+}
+
+#kotonoha_calendar-body td {
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+}
+/* sp */
+@media screen and (max-width: 768px) {
+    .fvTitle h2 {
+        font-size: 6.5vw !important;
+    }
+    .fvTitle {
+        margin-left: 16px;
+    }
+
+    .fvTitle .wp-block-columns {
+        align-content: flex-start;
+    }
+}
+/* Googleカレンダー */
+
+.parallaxInner {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.parallaxInner.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flowtitle-section {
+    position: relative;
+}
+
+.flowtitle-textBk {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    z-index: -1;
+}
+
+/* ページオープニング */
+.pageOpening {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+.pageOpening.removed {
+    display: none;
+}
+
+.pageOpening.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    font-size: 2rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* 線アニメーション */
+/* .line-wrapper {
+    position: relative;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+} */
+
+/* .line-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    clip-path: inset(0 100% 0 0);
+} */
+
+.container {
+    margin-bottom: 500px;
+    margin-left: 20px;
+    margin-top: 500px;
+}
+.box {
+    background-color: #1cb4d3;
+    height: 100px;
+    width: 100px;
+}
+
+/* GoogleMap */
+.GoogleMap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* アクセス */
+.access_info {
+    margin-left: 1rem;
+}
+.access_info p {
+    letter-spacing: 2px;
+}
+.ooedo_line,
+.asakusa_line,
+.ginza_line {
+    position: relative;
+    padding-left: 35px;
+}
+
+.ooedo_line::after,
+.asakusa_line::after,
+.ginza_line::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ooedo_line::after {
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/Oedo.png);
+}
+
+.asakusa_line::after {
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/Asakusa.png);
+}
+
+.ginza_line::after {
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/ginza.png);
+}
+
+/* アクセス */
+
+/* フッター */
+.l-footer__inner {
+    position: relative;
+    background-size: 40%;
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/pepar-op5.png);
+}
+
+/* footer_slid */
+.w-beforeFooter img {
+    width: 130px;
+}
+.w-beforeFooter {
+    text-align: center;
+}
+
+.l-footer__foot {
+    padding-top: 0.5em;
+}
+.l-footer__nav a {
+    border-right: none;
+}
+
+.l-footer__nav li:first-child a {
+    border-left: none;
+}
+
+.l-footer .copyright {
+    font-size: 9px;
+}
+
+/* アーカイブ */
+.p-postList__title {
+    font-weight: bold !important;
+}
+.p-postList__body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* 投稿ページ */
+.c-categoryList__link {
+    font-size: 0.8rem;
+}
+
+/* bogo */
+.bogo-language-switcher {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bogo-language-switcher.list-view {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bogo-language-switcher li {
+    display: none; /* 一旦すべて非表示に */
+    background: #fff;
+    padding: 8px 12px;
+    /*   border: 1px solid #ccc; */
+    white-space: nowrap;
+}
+
+.bogo-language-switcher li.current {
+    display: block; /* 現在の言語だけ表示 */
+}
+
+.bogo-language-switcher:hover li {
+    display: block; /* ホバー時にすべて表示 */
+}
+
+.bogo-language-switcher li:hover {
+    background-color: #f0f0f0;
+}
+
+.bogo-language-switcher li a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+}
+
+/* 英語ページ */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+.en_title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+    font-size: 2rem !important;
+}
+
+.en_Content_inner {
+    position: relative;
+}
+
+.en_Content_img {
+    position: absolute;
+    top: -80px;
+    left: 30%;
+    z-index: -1;
+}
+
+.star {
+    display: flex;
+    gap: 8px;
+}
+.star [fill] {
+    fill: #f6c32b;
+}
+
+.star .svg-inline--fa {
+    font-size: 1.4rem !important;
+}
+
+.review_section {
+    margin: 0 30px;
+    /* 	height:calc(100vh/2); */
+}
+
+.review_inner {
+    margin: 0 2rem;
+    background: red;
+}
+
+/* コース */
+/* .course_parts_Wrap {
+    position: relative;
+} */
+
+/* .course_parts_title {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+} */
+
+/*  料金表 */
+.course_table td {
+    border: none;
+    padding: 2rem 0.75rem;
+}
+
+.course_table td:first-child {
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.course_table tr {
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.wp-block-table > table tr > :first-child:not(.-no1) {
+    max-width: 0 !important;
+    min-width: 0 !important;
+    width: 20% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .course_table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .course_table td:first-child {
+        padding: 1.5rem 0.75rem 0rem;
+    }
+    .course_table td:last-child {
+        padding: 0.3rem 0.75rem 1rem;
+    }
+    .wp-block-table > table tr > :first-child:not(.-no1) {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* フッター、ヘッダーsns */
+.sns_wrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.w-footer__box {
+    padding: 0;
+    text-align: center;
+}
+.w-footer__box img {
+    width: 140px;
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+.c-widget + .c-widget {
+    margin-top: 0.75rem;
+}
+.l-footer__widgetArea {
+    padding-bottom: 0;
+    padding-top: 4rem;
+}
+.l-footer__foot {
+    padding-top: 0;
+}
+
+.sns_wrap [fill] {
+    fill: black;
+}
+
+.l-footer__nav a {
+    font-size: 11px;
+}
+
+#breadcrumb {
+    z-index: 1;
+}
+
+.l-footer__inner {
+    position: relative;
+}
+.l-footer__inner::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    top: -20px;
+    left: 0;
+    box-shadow: 0 0 10px 20px #fff;
+    border-radius: 50%;
+}
+
+/* 言語 */
+.bogoflags {
+    margin: 2px 0px 0px;
+}
+
+.bogo-language-switcher li a {
+    font-size: 14px;
+}
+
+/* Reserveページ */
+.reserve_accordion {
+    margin-top: 6rem;
+}
+
+.reserve_accordion .swell-block-accordion__title {
+    color: #fff;
+    background: black;
+}
+
+/* レビュー */
+.slide_container {
+    background: beige;
+}
+.slide_container {
+    display: flex;
+}
+.slide_item {
+    border: solid;
+}
+
+/* フローティング */
+.floatingC_wrap {
+    position: fixed;
+    bottom: 5%;
+    right: -1.5rem;
+    z-index: 99;
+    transition: transform 0.75s ease-in-out;
+}
+
+.floatingC_wrap a {
+    color: unset;
+}
+
+.floatingC_wrap p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.floatingC_wrap li {
+    list-style: none;
+}
+
+.floatingC_wrap ul {
+    padding-inline-start: 0px;
+}
+
+.floatingC_item {
+    padding: 4rem 2rem 4rem 0.5rem;
+    border-radius: 8px 0px 0px 8px;
+    transition: 1s;
+}
+
+.floatingC_item.mail {
+    background: #e6e6e6;
+    background-image: url(https://studio-kotonoha.com/wp-content/uploads/2025/04/pepar.jpg);
+    background-size: 300px;
+}
+
+.floatingC_item.line {
+    background-image: linear-gradient(43deg, #f0238d, #8b5cf6);
+    background-image: linear-gradient(43deg, #f0238d, #8b5cf6);
+    color: #fff;
+}
+
+.floatingC_item:hover {
+    opacity: 80%;
+}
+.floatingC_wrap.hide {
+    transform: translatex(100%);
+}
+.floatingC_title {
+    display: none;
+}
+
+.fCicon {
+    width: 35px;
+    height: auto;
+    margin: auto;
+}
+.icon_mail .cls-1 {
+    fill: #868686;
+    mix-blend-mode: difference;
+}
+
+/* フローティングsp */
+@media screen and (max-width: 768px) {
+    .floatingC_wrap ul {
+        display: flex;
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+    .floatingC_wrap {
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #3737379e;
+        padding-bottom: 0.5rem;
+    }
+    .floatingC_item {
+        flex: 1;
+        border-radius: 8px;
+        padding: 0.5rem;
+    }
+    .floatingC_wrap img {
+        width: 25px;
+    }
+    .floatingC_item.mail {
+        border: none;
+    }
+    .floatingC_wrap.hide {
+        transform: translatey(100%);
+    }
+    .floatingC_title {
+        font-size: 1rem !important;
+        display: block;
+        color: #fff;
+        padding: 0.5rem 0;
+    }
+    /* #footer {
+        margin-bottom: 160px;
+    } */
+}
+
+.-type-list .p-postList__link {
+    align-items: center;
+    gap: 11px;
+    justify-content: flex-start;
+}
+.p-postList__body {
+    padding-bottom: 1rem;
+}
+
+.w-beforeFooter {
+    margin: 180px auto 3em;
+}
+
+.l-footer,
+.l-footer__widgetArea {
+    background-color: unset;
+}
+
+/* 確認ページ */
+.confirmation.cf_section .item.detail p {
+    padding-left: 0px;
+}
+
+.confirmation.cf_section .item.detail p:before {
+    content: "◼︎";
+}
+.confirmation.cf_section .item.value {
+    padding-left: 1.2rem;
+}
+.cf_section.confirmation .inner {
+    padding: 0.3rem;
+}
+.kiboubi_wrap_confirmation {
+    margin-bottom: 1rem;
+}
+
+/* レビューショートコード */
+.review_container h3 {
+    border-left: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review_list {
+    list-style: none;
+    padding-inline-start: 0px !important;
+    display: flex;
+    gap: 20px;
+}
+.review_item {
+    width: 400px;
+}
+.review_item .icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--color_main);
+}
+
+.review_item .star {
+    color: #f6c32b;
+    font-size: 1.1rem;
+}
+
+/* arrow */
+.review_container .swiper-button-prev,
+.review_container .swiper-button-next {
+    background: #00000029;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.review_container .swiper-button-prev:after,
+.review_container .swiper-button-next::after {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Fv */
+.Fv_section {
+    margin-top: -100px;
+}
+.Fv_inner h2 {
+    background-color: unset;
+    color: var(--color_text);
+    letter-spacing: 4px;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+.Fv_inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Fv_section ul {
+    padding: 0;
+}
+.Fv_block.album {
+    flex: 2;
+}
+.Fv_block.album img {
+    width: 100%;
+    height: calc(100vh / 1.3);
+    object-fit: cover;
+}
+.Fv_block.title {
+    flex: 1;
+}
+
+.top #content {
+    padding-top: 0;
+}
+
+.original_info.original_info .p-postList__body {
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 0;
+}
+
+/* .l-container{
+	padding-left:0;
+	padding-right:0;
+} */
+
+.album_section {
+    width: 100%;
+}
+
+.album_item {
+    margin: 0;
+    padding: 0;
+}
+
+.album_item .swiper-slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album_item .swiper-slide img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* flow 海外 */
+.Flow_step-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: 3px !important;
+}
+.Flow_step-title h2,
+.flow_info_wrap h2 {
+    background-color: unset;
+    color: black;
+    font-weight: bold !important;
+    font-size: 2rem !important;
+    padding: 0;
+}
+.Flow_step-title p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.Flow_step_block ul {
+    padding-inline-start: 10px;
+}
+.Flow_step_block li {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.Flow_step_block li::before {
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("http://studio-kotonoha.com/wp-content/uploads/2025/06/fude-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Flow_about_wrap h3 {
+    color: var(--color_main);
+    border-left: none;
+    padding: 0;
+    margin-bottom: 1em !important;
+}
+.Flow_about_wrap h4 {
+    margin: 1em 0 1.5em;
+}
+.flow_info_wrap {
+    max-width: 700px;
+    margin: auto;
+}
+.flow_info_wrap h2 {
+    color: var(--color_main);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 2rem;
+}
+.flow_attention {
+    font-size: 2rem !important;
+    line-height: 1.4;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* flow 海外 */
+
+.Registration-title_wrap {
+    padding: 4rem 0;
+}
+.kotonohateximg img {
+    opacity: 30%;
+}
+.kotonohateximg {
+    left: -70%;
+    top: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .kotonohateximg img {
+        width: 300px;
+    }
+}
+
+.l-header .l-header__inner {
+    background: linear-gradient(120deg, #fff, #ffffff00);
+}
+
+.plan_inner .wp-block-spacer {
+    display: none;
+}
+
+.plan_inner {
+    margin-bottom: 80px;
+}
+
+.plan_inner-title {
+    max-width: 260px;
+}
+
+.howto_co_section .has-swl-main-thin-background-color {
+    background-color: #ffffff0d !important;
+}
+
+/* 入会クロージング */
+.aboutClosing-fude {
+    margin-left: -30%;
+    margin-bottom: -40%;
+}
+
+.aboutClosing-img1 img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.aboutClosing-img1 {
+    margin-left: 80%;
+}
+
+.aboutClosing-img2 img {
+    width: 360px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.aboutClosing-img2 {
+    margin-top: -5%;
+    margin-left: 30%;
+}
+
+.aboutClosing-img3 img {
+    width: 230px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.aboutClosing-img3 {
+    margin-top: -5%;
+    margin-left: -40%;
+}
+
+.aboutClosing-img4 img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+}
+.aboutClosing-img4 {
+    margin-top: -20%;
+    margin-left: 70%;
+}
+
+.aboutClosing-title,
+.aboutClosing-title-en {
+    margin-bottom: -15%;
+}
+
+.en-US .aboutClosing-title {
+    display: none;
+}
+.aboutClosing-title-en {
+    display: none;
+}
+.en-US .aboutClosing-title-en {
+    display: block;
+}
+
+/* アクセス */
+.Access_shop-wrap {
+    padding-bottom: 4rem;
+}
+.Access_shop-img1 img {
+    width: 530px;
+    height: 400px;
+    object-fit: cover;
+}
+.Access_shop-img1 {
+    margin-left: -30%;
+}
+.Access_shop-img2 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.Access_shop-img2 {
+    margin-top: -20%;
+    margin-left: 60%;
+}
+
+/* 海外top */
+.en_content-wrap,
+.en_content-wrap-left {
+    position: relative;
+}
+.en_content-wrap img,
+.en_content-wrap-left img {
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+}
+.en_content-wrap-left {
+    margin-left: -30%;
+}
+
+.en_content-wrap:before {
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 350px;
+    /* background-color: beige; */
+    top: -20%;
+    left: 50%;
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/pepar-op5.png);
+    object-fit: cover;
+    background-size: 80%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+.en_content-wrap-left:before {
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 350px;
+    /* background-color: beige; */
+    top: 20%;
+    left: 30%;
+    background-image: url(http://studio-kotonoha.com/wp-content/uploads/2025/06/pepar-op5.png);
+    object-fit: cover;
+    background-size: 80%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+.en_content-block {
+    padding: 4rem 0;
+}
+
+.course_en-section .course_en-title {
+    display: none;
+}
+
+.course_en-section img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.course_en-block:first-child {
+    padding-left: 4rem;
+}
+
+.course_en-block:last-child {
+    padding: 0 2rem;
+}
+
+.course_en-section .course_en-parts {
+    padding-bottom: 1rem;
+}
+
+/* クロージングスライド */
+.closingSlid-section .swiper-wrapper {
+    transition-timing-function: linear;
+}
+.closingSlid-section .swiper-slide img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* svg画像処理 */
+.lineAnimation path {
+    fill: none;
+    stroke: #ffffff;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    stroke-linecap: round;
+    stroke-width: 100px;
+    filter: blur(10px);
+}
+
+/* アルバム */
+.closingSlid-section {
+    width: 100%;
+}
+
+/* スマホ */
+@media screen and (max-width: 781px) {
+    .originalColumns-wrap {
+        gap: 1rem !important;
+    }
+
+    .originalColumns-left {
+        flex-direction: column-reverse;
+    }
+}
+
+.imgBk-inner_svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.imgBk-inner_svg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.lineAnimation svg {
+    width: 110%;
+}
+
+/* 月アーカイブ */
+/* .kotonoha_calendar-section h2 {
+    display: none;
+} */
+
+/* spps切り替え */
+.pc_none {
+    display: none !important;
+}
+.sp_none {
+    display: block !important;
+}
+@media screen and (max-width: 781px) {
+    .pc_none {
+        display: block !important;
+    }
+    .sp_none {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .kotonohateximg img {
+        width: 300px !important;
+    }
+    .kotonohateximg {
+        left: -30%;
+        top: 80%;
+    }
+}
+
+/* 追加 */
+.fude_gig {
+    left: -50%;
+    top: -20%;
+}
+
+.about_wrap2 .fude_gig {
+    top: 0;
+    left: -50%;
+    top: 90%;
+}
+
+.p-postList__meta {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .Access_shop-img1 img {
+        width: calc(530px / 1.4);
+        height: calc(400px / 1.4);
+    }
+    .GoogleMap {
+        padding-bottom: 1rem;
+    }
+    .plan_inner-title {
+        margin: auto;
+    }
+    .flowtitle-section {
+        padding-bottom: 1rem;
+    }
+    .fude_gig {
+        top: 10%;
+    }
+}
+
+/* 投稿ラベル */
+.is-style-crease {
+    background-color: #f9f7d2;
+}
+
+.page-id-708 .wp-block-snow-monkey-blocks-btn {
+    display: none;
+}
+/* flows */
+.unit_section-about1en img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.unit_section-about2en img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.unit_section-about3en img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.unit_section-about1en {
+    margin-left: -40%;
+}
+.unit_section-about2en {
+    margin-left: 30%;
+    margin-top: -80px;
+}
+
+.unit_section-about3en {
+    margin-left: -60%;
+    margin-top: -120px;
+}
+
+@media screen and (max-width: 768px) {
+    .unit_section-about1en {
+        margin-left: -120px;
+    }
+    .unit_section-about3en {
+        margin-left: -20%;
+        margin-top: -140px;
+    }
+    .programoverview-wrap {
+        padding-top: 2rem;
+    }
+}
+
+/* 予約フォーム */
+#booking-package_inputFormPanel select {
+    background-color: #fff !important;
+    padding: 12px !important;
+    border-radius: 4px;
+}
+
+#booking-package_inputFormPanel input[type="text"] {
+    background-color: #fff !important;
+    padding: 6px !important;
+    border-radius: 4px;
+}
+#booking-package_schedulePage button,
+#booking-package button {
+    background-color: var(--color_main);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem !important;
+}
+
+#bottomPanel {
+    justify-content: center !important;
+}
+
+#booking-package_pay_with_stripe {
+    padding: 1.2rem;
+    border: solid 4px #e1e1e1;
+    border-radius: 8px;
+}
+#returnToSchedules {
+    max-width: 160px;
+}
+#nextAndReturnPanel {
+    text-align: right !important;
+}
+
+/* カレンダー */
+/* #kotonoha_calendar-title {
+    font-size: 1.3rem;
+    padding-left: 4px;
+    color: #191919;
+} */
